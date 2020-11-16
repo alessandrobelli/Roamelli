@@ -1,0 +1,506 @@
+/* change main font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap');
+body,
+html,
+div,
+textarea {
+	font-family: "Roboto";
+}
+
+body {
+	background-color: rgb(40, 40, 47);
+}
+
+
+/* reference block */
+
+.rm-block-ref {
+	border-bottom: none;
+	color: rgb(162, 162, 166);
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.rm-block-ref:hover {
+	background: none;
+	cursor: pointer;
+}
+
+.block-ref-count-button {
+	font-weight: bolder !important;
+	font-size: normal;
+	color: white !important;
+	background-color: #F26B38 !important;
+	opacity: 1;
+}
+
+.rm-block-ref label.check-container {
+	margin-bottom: 12px;
+}
+
+
+/* Page Link Over-ride   */
+
+span.rm-page-ref {
+	color: #F26B38 !important;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+
+/* change font for all headings */
+/* Header Styles */
+
+.roam-app h1 {
+	/* styles page titling */
+	color: #61F0A9 !important;
+	font-weight: bold;
+	font-size: 32px;
+	font-family: "Roboto Sans";
+	letter-spacing: -0.04em;
+}
+
+
+/* Header Styles */
+
+.roam-app h2 {
+	/* styles page titling */
+	color: #61F0A9 !important;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: "Roboto Sans";
+}
+
+
+/* Header Styles */
+
+.roam-app h3 {
+	/* styles page titling */
+	color: #61F0A9 !important;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: "Roboto Sans";
+}
+
+
+/* less space below page heading */
+
+.roam-body .roam-app .roam-main .roam-article .rm-title-display {
+	margin-bottom: 10px;
+}
+
+#right-sidebar .controls .roam-bullet-closed,
+.controls .roam-bullet-closed {
+	background: none;
+	border: 1px solid #F26B38;
+}
+
+.simple-bullet-inner {
+	opacity: 0.5;
+}
+
+
+/* lighter vertical guides */
+
+.block-border-left {
+	border-color: #F26B38;
+}
+
+
+/* blocks as headings */
+
+.roam-block-container h1 {
+	font-weight: 300;
+	font-size: 26px;
+	color: #61F0A9;
+}
+
+.roam-block-container h2 {
+	font-weight: 600;
+	font-size: 18px;
+	color: #61F0A9;
+}
+
+.roam-block-container h3 {
+	font-weight: 600;
+	font-size: 14px;
+	color: #61F0A9;
+}
+
+
+/* align checkboxes better */
+
+label.check-container {
+	margin-bottom: 11px;
+	margin-right: 3px;
+}
+
+
+/* align checkboxes in zoomed-in headings */
+
+.rm-level1 label.check-container {
+	margin-bottom: 17px;
+	margin-right: -3px;
+}
+
+
+/* lighter block text */
+
+.roam-block-container div {
+	color: rgb(162, 162, 166);
+}
+
+
+/* the single backtick code snippets */
+
+code {
+	background-color: black !important;
+	border-radius: 0px !important;
+	color: #61F0A9;
+	border: 0px solid black;
+	font-weight: bold;
+}
+
+
+/* don't need "SHORTCUTS" heading */
+
+.starred-pages-wrapper .flex-h-box {
+	display: none;
+}
+
+.rm-pages-title-text {
+	color: white;
+}
+
+#rm-all-pages-column-titles {
+	color: white;
+	background: rgb(40, 40, 47);
+}
+
+.starred-pages-wrapper>div:first-child {
+	margin: 0 -18px;
+}
+
+
+/* more subtle logo */
+
+#roam-sidebar-logo img {
+	opacity: 0.1;
+}
+
+#roam-sidebar-logo span {
+	display: none;
+}
+
+
+/* fade loading astrolabe */
+
+.loading-astrolabe img {
+	opacity: 0.2;
+}
+
+
+/* sidebar sections */
+
+#roam-right-sidebar-content>div {
+	border-bottom: 1px solid #F26B38 !important;
+	margin: 0 !important;
+	padding: 10px 4px 10px 14px;
+	font-family: "Roboto";
+}
+
+
+/* sidebar section headings */
+
+#roam-right-sidebar-content>div>div:first-child {
+	margin-left: -10px;
+}
+
+
+/* smaller sidebar headings */
+
+#right-sidebar strong {
+	color: #61F0A9;
+	background-color: rgb(27, 36, 38);
+	font-size: 0.8em;
+}
+
+
+/* rule under top section of left sidebar */
+
+.roam-sidebar-content>div:first-child {
+	padding: 4px 16px !important;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #F26B38(57, 75, 89);
+}
+
+
+/* rule under topbar */
+
+.roam-topbar {
+	border-bottom: 1px solid #F26B38;
+	background-color: rgb(40, 40, 47);
+	color: white;
+}
+
+
+/* crumbs */
+
+.rm-reference-item>div:first-child>div:first-child div span:not(.bp3-icon-chevron-right),
+.roam-article>div:first-child:not(.roam-log-container)>div:first-child div span:not(.bp3-icon-chevron-right) {
+	font-size: 12px;
+	line-height: 1.3;
+	color: white !important;
+	/* truncate to smaller width, use css for ellipsis */
+	max-width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 2px !important;
+}
+
+.rm-reference-item>div:first-child>div:first-child div span:hover:not(.bp3-icon-chevron-right),
+.roam-article>div:first-child:not(.roam-log-container)>div:first-child div span:hover:not(.bp3-icon-chevron-right) {
+	color: white !important;
+}
+
+
+/* chevrons in crumbs */
+
+.roam-reference-item>div>div:first-child .bp3-icon-chevron-right,
+.roam-article>div>div:first-child:not(.roam-log-container) .bp3-icon-chevron-right {
+	font-size: 1em;
+	margin: 0 3px;
+	color: white !important;
+}
+
+.bp3-icon-standard {
+	color: #F26B38;
+	opacity: 0.7;
+}
+
+
+/* no checkboxes in crumbs */
+
+.roam-reference-item>div:first-child:not(.roam-log-container)>div:first-child label.check-container,
+.roam-article>div:first-child:not(.roam-log-container)>div:first-child label.check-container {
+	display: none;
+}
+
+
+/* link buttons for referenced items */
+
+.rm-reference-main button {
+	border: 1px solid white;
+	border-radius: 0.3em;
+	font-size: 0.8em;
+	color: white;
+}
+
+.rm-reference-main button:hover {
+	border-color: white;
+}
+
+
+/* Side Bar Open/Close Icon */
+
+.bp3-button:before,
+.bp3-minimal:before,
+.bp3-icon-menu:before,
+.bp3-small:before {
+	color: white !important;
+}
+
+.bp3-button,
+.bp3-minimal,
+.bp3-icon-menu,
+.bp3-small {
+	color: white !important;
+}
+
+
+/* referenced item section headings */
+
+.rm-reference-main {
+	border-top: 2px solid white;
+}
+
+.rm-reference-main .flex-h-box {
+	min-height: 30px;
+}
+
+.rm-reference-main strong {
+	color: white;
+	font-size: 0.8em;
+}
+
+
+/* remove background from referenced items */
+
+.rm-reference-item {
+	padding: 12px 0 0 0;
+	margin: 12px 0 0 0;
+	border-top: 1px solid white;
+	background: none;
+}
+
+
+/* slightly bigger page headings under referenced items */
+
+.rm-reference-main .rm-level3 {
+	font-size: 1.6em;
+	color: white;
+}
+
+
+/* search */
+
+.rm-find-or-create-wrapper {
+	flex: 0 1 100% !important;
+}
+
+.rm-find-or-create-wrapper .bp3-input {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+
+/* Tag Styles */
+
+.rm-page-ref-tag {
+	/* hashtags */
+	color: white !important;
+	background-color: rgb(40, 40, 47);
+	border-radius: 0px;
+	padding: 2px 3px 2px 3px;
+	font-family: "Roboto Mono";
+}
+
+.rm-page-ref-tag:hover {
+	color: white !important;
+	background-color: #F26B38;
+	text-decoration: none;
+	font-family: "Roboto Mono";
+}
+
+.roam-highlight {
+	/* highlighting */
+	background-color: #61F0A9;
+	color: #0F1419;
+	border-radius: 0px;
+	padding: 2px 3px 2px 3px;
+}
+
+
+/* Bullets */
+
+.controls .simple-bullet-outer .simple-bullet-inner {
+	border-radius: 0%;
+	width: 5px;
+	height: 5px;
+	background-color: #F26B38 !important;
+}
+
+
+/* expandable bullets */
+
+.roam-bullet-closed {
+	background-color: #F26B38 !important;
+}
+
+.rm-block-text {
+	max-width: 100%;
+	color: white;
+}
+
+.rm-ref-page-view-title a {
+	color: white;
+}
+
+
+/* When the checkbox is checked, add a background color */
+
+.check-container input:checked~.checkmark {
+	background-color: #F26B38;
+	border: none;
+}
+
+.bp3-control .bp3-control-indicator::before {
+	background-color: rgb(40, 40, 47);
+	border-radius: 0px;
+	border: 1px solid rgb(162, 162, 166);
+	;
+}
+
+.rm-clickable-pill {
+	opacity: 1;
+	background-color: #F26B38;
+	border-radius: 0px;
+}
+
+
+/* Slash Popup */
+
+.bp3-elevation-3 {
+	background-color: black !important;
+	font-size: 12px;
+	border-radius: 0px;
+	box-shadow: 0 0 0 2px #61F0A9, 0 2px 15px #61F0A9;
+}
+
+
+/* Context Menus */
+
+.bp3-popover .bp3-popover-content,
+.bp3-menu {
+	background: black;
+	color: #F26B38 !important;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #61F0A9, 0 2px 10px #61F0A9, 0 3px 15px #61F0A9;
+}
+
+
+/* Roam Search Box Field and Border */
+
+.bp3-input,
+.bp3-input[readonly] {
+	background: black;
+	box-shadow: inset 0 0 0 1px #61F0A9;
+}
+
+
+/* Input Text Color */
+
+.bp3-input {
+	color: rgb(162, 162, 166) !important;
+	border-radius: 0px !important;
+}
+
+
+/* Roam Search Box Placeholder Text Color */
+
+.bp3-input::placeholder,
+.bp3-input-group>.bp3-icon {
+	color: rgb(162, 162, 166);
+}
+
+
+/* Top Bar Shorcuts */
+
+.bp3-icon-graph:before,
+.bp3-icon-star:before,
+.bp3-icon-star-empty:before,
+.bp3-icon-more:before {
+	color: #F26B38 !important;
+}
+
+.bp3-icon-filter {
+	color: #F26B38 !important;
+}
+
+.bp3-menu-item{
+        color: #F26B38;
+}
